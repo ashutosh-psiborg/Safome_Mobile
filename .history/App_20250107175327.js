@@ -15,14 +15,7 @@ export default function App() {
         screenOptions={{
           tabBarLabelStyle: {
             fontSize: 14,
-          },
-          tabBarStyle: {
-            height: 60, // Adjust height for better alignment
-            paddingBottom: 8,
-          },
-          tabBarIconStyle: {
-            alignItems: 'center', // Align icon in the center
-            justifyContent: 'center',
+            allignItems : 'center',
           },
         }}
       >
