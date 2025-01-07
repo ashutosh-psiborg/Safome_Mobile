@@ -2,9 +2,11 @@ import React from 'react';
 import {View, Text, Button, StyleSheet} from 'react-native';
 
 const HomeScreen = () => {
+  const navigation = useNavigation();
   return (
     <View style={styles.container}>
       <Text style={styles.text}>Welcome to the Home Screen!</Text>
+      <Button title="Go to Details" />
     </View>
   );
 };
