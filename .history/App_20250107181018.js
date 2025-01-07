@@ -21,7 +21,7 @@ export default function App() {
             paddingBottom: 8,
           },
           tabBarIconStyle: {
-            alignItems: 'center', 
+            alignItems: 'center', // Align icon in the center
             justifyContent: 'center',
           },
         }}
