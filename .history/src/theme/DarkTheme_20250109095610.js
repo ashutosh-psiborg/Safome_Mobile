@@ -1,0 +1,4 @@
+const DarkTheme = {
+    isDark : true,
+    
+}
