@@ -23,12 +23,12 @@ const CustomButton = ({ text, color, textColor, onPress, icon: Icon, borderColor
 
 const styles = StyleSheet.create({
   button: {
-    // paddingVertical: DimensionConstants.sixteen,
+    paddingVertical: DimensionConstants.sixteen, 
     borderRadius: DimensionConstants.fifty,
     alignItems: 'center',
     justifyContent: 'center',
     marginTop: DimensionConstants.fifteen,
-    height : DimensionConstants.fortyEight
+    height : Dime
   },
   content: {
     flexDirection: 'row',

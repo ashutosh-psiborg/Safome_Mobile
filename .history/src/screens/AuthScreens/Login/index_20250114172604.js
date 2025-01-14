@@ -102,7 +102,7 @@ const LoginScreen = () => {
       <Text style={Styles.resetPasswordText}>
         I don’t remember password? <Text style={Styles.resetWord}>Reset</Text>
       </Text>
-      <Spacing height={DimensionConstants.nine} />
+      <Spacing height={DimensionConstants.twentyFour} />
       <CustomButton text={t('Login')} />
       <Spacing height={DimensionConstants.sixteen} />
       <TouchableOpacity>
@@ -110,6 +110,7 @@ const LoginScreen = () => {
       </TouchableOpacity>
       <Spacing height={DimensionConstants.fifty} />
       <Text style={Styles.continue}>or continue with</Text>
+      <Spacing height={DimensionConstants.ten} />
       <CustomButton
         textColor={theme.blackText}
         borderColor={theme.buttonBorder}
@@ -118,6 +119,7 @@ const LoginScreen = () => {
         icon={<GoogleIcon />}
         onPress={signIn}
       />
+      <Spacing height={DimensionConstants.ten} />
       <CustomButton
         textColor={theme.blackText}
         borderColor={theme.buttonBorder}

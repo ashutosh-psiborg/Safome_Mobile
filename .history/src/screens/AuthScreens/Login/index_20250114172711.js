@@ -110,6 +110,7 @@ const LoginScreen = () => {
       </TouchableOpacity>
       <Spacing height={DimensionConstants.fifty} />
       <Text style={Styles.continue}>or continue with</Text>
+      <Spacing height={DimensionConstants.ten} />
       <CustomButton
         textColor={theme.blackText}
         borderColor={theme.buttonBorder}

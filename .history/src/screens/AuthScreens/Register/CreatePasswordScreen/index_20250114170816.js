@@ -8,11 +8,10 @@ import Spacing from '../../../../components/Spacing';
 import {DimensionConstants} from '../../../../constants/DimensionConstants';
 import CustomButton from '../../../../components/CustomButton';
 import GlobeIcon from '../../../../assets/icons/GlobeIcon';
-import {VerifyMailOtpStyles} from '../VerifyMailOtpScreen/Styles/VerifyMailOtpStyles';
+import { VerifyMailOtpStyles } from '../VerifyMailOtpScreen/Styles/VerifyMailOtpStyles';
 
-const VerifyPhoneOtpScreen = ({route, navigation}) => {
+const CreatePasswordScreen = ({route, navigation}) => {
   const {theme} = useTheme();
-  const {phoneNumber} = route.params;
   const [code, setCode] = useState('');
   const {t} = useTranslation();
   const styles = VerifyMailOtpStyles(theme);
@@ -24,29 +23,36 @@ const VerifyPhoneOtpScreen = ({route, navigation}) => {
   return (
     <MainBackground>
       <CustomHeader
-        title={t('Verify phone number')}
+        title={t('Password')}
         backPress={() => navigation.goBack()}
       />
       <Spacing height={DimensionConstants.thirtyEight} />
-      <Text style={styles.title}>{t('Please verify your Phone number')}</Text>
+      <Text style={styles.title}>{t('Please enter new Password')}</Text>
       <Spacing height={DimensionConstants.twentyFour} />
       <View style={{maxWidth: '80%'}}>
-        <Text style={styles.infoText}>{t('We have sent OTP to')} </Text>
-        <View style={{alignItems: 'center', flexDirection: 'row'}}>
-          <Text style={styles.emailText}>{`+91 ${phoneNumber}`} </Text>
-          <TouchableOpacity>
-            <Text style={styles.edit}>Edit</Text>
-          </TouchableOpacity>
-          <Text style={styles.infoText}> {t('phone number')}</Text>
-        </View>
-        <Text style={styles.infoText}>Enter OTP below.</Text>
+        <Text style={styles.infoText}>{t('Enter new password to secure your account.')} </Text>
+        <Text style={styles.infoText}>
+          {t('Enter the code below.')}
+        </Text>
       </View>
       <Spacing height={DimensionConstants.thirtyOne} />
       <View style={styles.inputContainer}>
         <GlobeIcon />
         <TextInput
           style={styles.input}
-          placeholder={t('Enter OTP')}
+          placeholder={t('Enter code')}
+          value={code}
+          onChangeText={text => handleChange(text)}
+          keyboardType="phone-pad"
+          placeholderTextColor={theme.placeHolderText}
+          maxLength={6}
+        />
+          </View>
+          <View style={styles.inputContainer}>
+        <GlobeIcon />
+        <TextInput
+          style={styles.input}
+          placeholder={t('Enter code')}
           value={code}
           onChangeText={text => handleChange(text)}
           keyboardType="phone-pad"
@@ -54,20 +60,17 @@ const VerifyPhoneOtpScreen = ({route, navigation}) => {
           maxLength={6}
         />
       </View>
-      <CustomButton
-        onPress={ () =>
-          navigation.navigate('CreatePasswordScreen') }
-        text={t('Continue')}
-      />
+      <CustomButton onPress={ () => navigation
+      .navigate('')} text={ t('Continue') } />
       <Spacing height={DimensionConstants.sixteen} />
       <View style={styles.footerContainer}>
-        <Text style={styles.footerText}>{t('OTP not recieved?')}</Text>
+        <Text style={styles.footerText}>{t('Don’t see an email?')}</Text>
         <TouchableOpacity>
-          <Text style={styles.resendText}> {t('Resend OTP')}</Text>
+          <Text style={styles.resendText}> {t('Resend')}</Text>
         </TouchableOpacity>
       </View>
     </MainBackground>
   );
 };
 
-export default VerifyPhoneOtpScreen;
+export default CreatePasswordScreen;

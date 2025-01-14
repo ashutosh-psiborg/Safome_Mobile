@@ -35,7 +35,7 @@ const VerifyPhoneOtpScreen = ({route, navigation}) => {
         <View style={{alignItems: 'center', flexDirection: 'row'}}>
           <Text style={styles.emailText}>{`+91 ${phoneNumber}`} </Text>
           <TouchableOpacity>
-            <Text style={styles.edit}>Edit</Text>
+            <Text style = {styles.edit}>Edit</Text>
           </TouchableOpacity>
           <Text style={styles.infoText}> {t('phone number')}</Text>
         </View>
@@ -55,8 +55,11 @@ const VerifyPhoneOtpScreen = ({route, navigation}) => {
         />
       </View>
       <CustomButton
-        onPress={ () =>
-          navigation.navigate('CreatePasswordScreen') }
+        onPress={() =>
+          navigation.navigate('VerifyPhoneOtpScreen', {
+            phoneNumber: phoneNumber,
+          })
+        }
         text={t('Continue')}
       />
       <Spacing height={DimensionConstants.sixteen} />

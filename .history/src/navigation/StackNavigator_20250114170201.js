@@ -6,7 +6,6 @@ import OnboardingScreen from '../screens/AuthScreens/Onboarding/index';
 import WelcomeScreen from '../screens/AuthScreens/Welcome/index';
 import VerifyMailOtpScreen from '../screens/AuthScreens/Register/VerifyMailOtpScreen/index';
 import VerifyPhoneOtpScreen from '../screens/AuthScreens/Register/VerifyPhoneOtpScreen/index';
-import CreatePasswordScreen from '../screens/AuthScreens/Register/CreatePasswordScreen/index';
 
 const Stack = createNativeStackNavigator();
 

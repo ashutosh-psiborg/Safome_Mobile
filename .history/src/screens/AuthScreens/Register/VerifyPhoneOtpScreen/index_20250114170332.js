@@ -55,8 +55,8 @@ const VerifyPhoneOtpScreen = ({route, navigation}) => {
         />
       </View>
       <CustomButton
-        onPress={ () =>
-          navigation.navigate('CreatePasswordScreen') }
+        onPress={() =>
+          navigation.navigate(''
         text={t('Continue')}
       />
       <Spacing height={DimensionConstants.sixteen} />
