@@ -8,7 +8,7 @@ import Spacing from '../../../../components/Spacing';
 import {DimensionConstants} from '../../../../constants/DimensionConstants';
 import CustomButton from '../../../../components/CustomButton';
 import GlobeIcon from '../../../../assets/icons/GlobeIcon';
-import {VerifyMailOtpStyles} from '../VerifyMailOtpScreen/Styles/VerifyMailOtpStyles';
+import { VerifyMailOtpStyles } from '../VerifyMailOtpScreen/Styles/VerifyMailOtpStyles';
 
 const VerifyPhoneOtpScreen = ({route, navigation}) => {
   const {theme} = useTheme();
@@ -32,13 +32,13 @@ const VerifyPhoneOtpScreen = ({route, navigation}) => {
       <Spacing height={DimensionConstants.twentyFour} />
       <View style={{maxWidth: '80%'}}>
         <Text style={styles.infoText}>{t('We have sent OTP to')} </Text>
-        <View style={{alignItems: 'center', flexDirection: 'row'}}>
-          <Text style={styles.emailText}>{phoneNumber} </Text>
+        <Text style={styles.infoText}>
+          <Text style={ styles.emailText }>{ phoneNumber }</Text>{ ' ' }
           <TouchableOpacity>
-            <Text style={styles.edit}>Edit</Text>
+            <TetEdit
           </TouchableOpacity>
-          <Text style={styles.infoText}> {t('phone number')}</Text>
-        </View>
+          {t('phone number')}
+        </Text>
         <Text style={styles.infoText}>Enter OTP below.</Text>
       </View>
       <Spacing height={DimensionConstants.thirtyOne} />
@@ -46,7 +46,7 @@ const VerifyPhoneOtpScreen = ({route, navigation}) => {
         <GlobeIcon />
         <TextInput
           style={styles.input}
-          placeholder={t('Enter OTP')}
+          placeholder={t('Enter code')}
           value={code}
           onChangeText={text => handleChange(text)}
           keyboardType="phone-pad"
@@ -54,19 +54,13 @@ const VerifyPhoneOtpScreen = ({route, navigation}) => {
           maxLength={6}
         />
       </View>
-      <CustomButton
-        onPress={() =>
-          navigation.navigate('VerifyPhoneOtpScreen', {
-            phoneNumber: phoneNumber,
-          })
-        }
-        text={t('Continue')}
-      />
+      <CustomButton onPress={ () => navigation
+      .navigate('VerifyPhoneOtpScreen',{phoneNumber : phoneNumber})} text={ t('Continue') } />
       <Spacing height={DimensionConstants.sixteen} />
       <View style={styles.footerContainer}>
-        <Text style={styles.footerText}>{t('OTP not recieved?')}</Text>
+        <Text style={styles.footerText}>{t('Don’t see an email?')}</Text>
         <TouchableOpacity>
-          <Text style={styles.resendText}> {t('Resend OTP')}</Text>
+          <Text style={styles.resendText}> {t('Resend')}</Text>
         </TouchableOpacity>
       </View>
     </MainBackground>

@@ -24,7 +24,7 @@ const CustomButton = ({ text, color, textColor, onPress, icon: Icon, borderColor
 const styles = StyleSheet.create({
   button: {
     paddingVertical: DimensionConstants.sixteen, 
-    borderRadius: DimensionConstants.fifty,
+    borderRadius: DimensionConstants,
     alignItems: 'center',
     justifyContent: 'center',
     marginTop: DimensionConstants.fifteen,

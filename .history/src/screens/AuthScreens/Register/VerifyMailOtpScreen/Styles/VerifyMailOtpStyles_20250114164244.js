@@ -8,7 +8,7 @@ export const VerifyMailOtpStyles = theme =>
       maxWidth: '80%',
       fontWeight: '500',
     },
-    edit: {color: '#FE605D', fontSize: 14, fontWeight: '500'},
+    {color:'#FE605D',fontSize:14,fontWeight : '500'}
     infoText: {
       color: theme.lightText,
       fontWeight: '500',

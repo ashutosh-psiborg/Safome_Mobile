@@ -35,7 +35,7 @@ const VerifyPhoneOtpScreen = ({route, navigation}) => {
         <View style={{alignItems: 'center', flexDirection: 'row'}}>
           <Text style={styles.emailText}>{phoneNumber} </Text>
           <TouchableOpacity>
-            <Text style={styles.edit}>Edit</Text>
+            <Text style = {{color:'#FE605D',fontSize:14,fontWeight : '500'}}>Edit</Text>
           </TouchableOpacity>
           <Text style={styles.infoText}> {t('phone number')}</Text>
         </View>

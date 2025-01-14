@@ -23,11 +23,11 @@ const CustomButton = ({ text, color, textColor, onPress, icon: Icon, borderColor
 
 const styles = StyleSheet.create({
   button: {
-    paddingVertical: DimensionConstants.sixteen, 
-    borderRadius: DimensionConstants.fifty,
+    paddingVertical: 16, // Increase vertical padding
+    borderRadius: 50,
     alignItems: 'center',
     justifyContent: 'center',
-    marginTop: DimensionConstants.fifteen,
+    marginTop: DimensionConstants,
   },
   content: {
     flexDirection: 'row',
@@ -35,7 +35,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   icon: {
-    marginRight: 8, 
+    marginRight: 8, // Space between icon and text
   },
   text: {
     fontSize: 16, // Increase font size

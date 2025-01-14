@@ -32,13 +32,15 @@ const VerifyPhoneOtpScreen = ({route, navigation}) => {
       <Spacing height={DimensionConstants.twentyFour} />
       <View style={{maxWidth: '80%'}}>
         <Text style={styles.infoText}>{t('We have sent OTP to')} </Text>
-        <View style={{alignItems: 'center', flexDirection: 'row'}}>
-          <Text style={styles.emailText}>{phoneNumber} </Text>
+       <View style = {{alignItems : cem''}}>
+        <Text style={ styles.infoText }>
+          <Text style={styles.emailText}>{phoneNumber}</Text>{' '}
           <TouchableOpacity>
-            <Text style={styles.edit}>Edit</Text>
+            <Text>Edit</Text>
           </TouchableOpacity>
-          <Text style={styles.infoText}> {t('phone number')}</Text>
-        </View>
+          {t('phone number')}
+          </Text>
+          </View>
         <Text style={styles.infoText}>Enter OTP below.</Text>
       </View>
       <Spacing height={DimensionConstants.thirtyOne} />
@@ -46,7 +48,7 @@ const VerifyPhoneOtpScreen = ({route, navigation}) => {
         <GlobeIcon />
         <TextInput
           style={styles.input}
-          placeholder={t('Enter OTP')}
+          placeholder={t('Enter code')}
           value={code}
           onChangeText={text => handleChange(text)}
           keyboardType="phone-pad"
@@ -64,9 +66,9 @@ const VerifyPhoneOtpScreen = ({route, navigation}) => {
       />
       <Spacing height={DimensionConstants.sixteen} />
       <View style={styles.footerContainer}>
-        <Text style={styles.footerText}>{t('OTP not recieved?')}</Text>
+        <Text style={styles.footerText}>{t('Don’t see an email?')}</Text>
         <TouchableOpacity>
-          <Text style={styles.resendText}> {t('Resend OTP')}</Text>
+          <Text style={styles.resendText}> {t('Resend')}</Text>
         </TouchableOpacity>
       </View>
     </MainBackground>
