@@ -16,7 +16,7 @@ export const loginStyles = (theme) => StyleSheet.create({
     signInText: {
       fontSize: DimensionConstants.thirtyTwo,
       fontWeight: '600',
-      maxWidth : '90%'
+      maxWidth : '80%'
     },
     enterMailText: {
       fontSize: DimensionConstants.fourteen,

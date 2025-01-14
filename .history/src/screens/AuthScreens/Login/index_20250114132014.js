@@ -16,7 +16,6 @@ import {
   GoogleSignin,
   statusCodes,
 } from '@react-native-google-signin/google-signin';
-import CustomHeader from '../../../components/CustomHeader';
 
 const LoginScreen = () => {
   const {t, i18n} = useTranslation();
@@ -74,7 +73,6 @@ const LoginScreen = () => {
         <BackIcon />
         <Text style={Styles.welcomeText}>{t('Welcome')}</Text>
       </View> */}
-      <CustomHeader title={t('Welcome')}/>
       <Spacing height={DimensionConstants.twentyFour} />
       <Text style={Styles.signInText}>{t('Sign in to your Account')}</Text>
       <Spacing height={DimensionConstants.twentyFour} />

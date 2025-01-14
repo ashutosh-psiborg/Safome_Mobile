@@ -12,11 +12,19 @@ export const loginStyles = (theme) => StyleSheet.create({
       flexDirection: 'row',
       paddingHorizontal: DimensionConstants.eighteen,
     },
-    
+    welcomeView: {
+      flexDirection: 'row',
+      alignItems: 'center',
+      marginLeft: DimensionConstants.fifteen,
+    },
+    welcomeText: {
+      fontSize: Dimens,
+      fontWeight: '600',
+      marginLeft: DimensionConstants.twentyFour,
+    },
     signInText: {
       fontSize: DimensionConstants.thirtyTwo,
       fontWeight: '600',
-      maxWidth : '90%'
     },
     enterMailText: {
       fontSize: DimensionConstants.fourteen,
@@ -24,24 +32,24 @@ export const loginStyles = (theme) => StyleSheet.create({
       color: theme.lightText,
     },
     resetPasswordText: {
-      fontSize: DimensionConstants.fourteen,
+      fontSize: 14,
       fontWeight: '500',
       color: theme.lightText,
     },
     resetWord: {
-      fontSize: DimensionConstants.fourteen,
+      fontSize: 14,
       fontWeight: '600',
       color: theme.blackText,
     },
     continue: {
       color: theme.lightText,
-      fontSize: DimensionConstants.fourteen,
+      fontSize: 14,
       fontWeight: '500',
       textAlign: 'center',
     },
     terms: {
       color: theme.grey,
-      fontSize: DimensionConstants.twelve,
+      fontSize: 12,
       fontWeight: '400',
       lineHeight: DimensionConstants.twentyTwo,
     },
@@ -51,7 +59,7 @@ export const loginStyles = (theme) => StyleSheet.create({
   },
   loginWithPhone : {
     color: theme.primary,
-    fontSize: DimensionConstants.fourteen,
+    fontSize: 14,
     fontWeight: '500',
     textAlign: 'center',
   }

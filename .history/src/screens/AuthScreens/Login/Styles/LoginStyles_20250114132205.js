@@ -16,7 +16,6 @@ export const loginStyles = (theme) => StyleSheet.create({
     signInText: {
       fontSize: DimensionConstants.thirtyTwo,
       fontWeight: '600',
-      maxWidth : '90%'
     },
     enterMailText: {
       fontSize: DimensionConstants.fourteen,
@@ -35,13 +34,13 @@ export const loginStyles = (theme) => StyleSheet.create({
     },
     continue: {
       color: theme.lightText,
-      fontSize: DimensionConstants.fourteen,
+      fontSize: 14,
       fontWeight: '500',
       textAlign: 'center',
     },
     terms: {
       color: theme.grey,
-      fontSize: DimensionConstants.twelve,
+      fontSize: 12,
       fontWeight: '400',
       lineHeight: DimensionConstants.twentyTwo,
     },
@@ -51,7 +50,7 @@ export const loginStyles = (theme) => StyleSheet.create({
   },
   loginWithPhone : {
     color: theme.primary,
-    fontSize: DimensionConstants.fourteen,
+    fontSize: 14,
     fontWeight: '500',
     textAlign: 'center',
   }

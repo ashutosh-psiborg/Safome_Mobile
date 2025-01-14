@@ -16,12 +16,12 @@ export const loginStyles = (theme) => StyleSheet.create({
     signInText: {
       fontSize: DimensionConstants.thirtyTwo,
       fontWeight: '600',
-      maxWidth : '90%'
     },
     enterMailText: {
       fontSize: DimensionConstants.fourteen,
       fontWeight: '500',
       color: theme.lightText,
+      
     },
     resetPasswordText: {
       fontSize: DimensionConstants.fourteen,
