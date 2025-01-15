@@ -38,10 +38,4 @@ export const BioMetricStyles = theme =>
     overlayTextContainer: {
       paddingHorizontal: DimensionConstants.ten,
     },
-    pinInput: {
-      fontSize: DimensionConstants.forty,
-      fontWeight: '600',
-      letterSpacing: DimensionConstants.twelve,
-      color: theme.primary,
-    }
   });

@@ -91,13 +91,10 @@ const BioMetricScreen = ({route, navigation}) => {
             <View style={styles.overlayContainer}>
               <SecurityTickIcon />
               <View style={styles.overlayTextContainer}>
-                <Text style={styles.resendText}>
-                  {t('Experience instant access')}
-                </Text>
+                <Text style={styles.resendText}>Experience instant access</Text>
                 <Text style={styles.infoText}>
-                  {t(
-                    'No passwords, no hassle, just secure and effortless verification',
-                  )}
+                  No passwords, no hassle, just secure and effortless
+                  verification
                 </Text>
               </View>
             </View>

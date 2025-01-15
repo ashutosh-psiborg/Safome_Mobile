@@ -29,7 +29,7 @@ const SecurityPinScreen = () => {
       <CustomHeader title={t('Biometric')} />
       <Spacing height={DimensionConstants.thirtyEight} />
       <Text style={styles.title}>Add security</Text>
-      <Text style={styles.title}>Pin</Text>
+      <Text style={styles.infoText}>Pin</Text>
       <Spacing height={DimensionConstants.twentyFour} />
       <Text style={[styles.infoText, {color: theme.lightText}]}>
         {t('Enter 4 digit security pin')}

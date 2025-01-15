@@ -7,7 +7,7 @@ import {DimensionConstants} from '../../../../constants/DimensionConstants';
 import {useTheme} from '../../../../theme/ThemeContext';
 import {useTranslation} from 'react-i18next';
 import {useNavigation} from '@react-navigation/native';
-import {BioMetricStyles} from '../BioMetricScreen/Styles/BioMetricStyles';
+import { BioMetricStyles } from '../BioMetricScreen/Styles/BioMetricStyles';
 const SecurityPinScreen = () => {
   const {theme} = useTheme();
   const navigation = useNavigation();
@@ -29,9 +29,9 @@ const SecurityPinScreen = () => {
       <CustomHeader title={t('Biometric')} />
       <Spacing height={DimensionConstants.thirtyEight} />
       <Text style={styles.title}>Add security</Text>
-      <Text style={styles.title}>Pin</Text>
+      <Text style={styles.infoText}>Pin</Text>
       <Spacing height={DimensionConstants.twentyFour} />
-      <Text style={[styles.infoText, {color: theme.lightText}]}>
+      <Text style={[styles.instruction, {color: theme.lightText}]}>
         {t('Enter 4 digit security pin')}
       </Text>
       <Spacing height={DimensionConstants.thirtyEight} />
@@ -49,5 +49,7 @@ const SecurityPinScreen = () => {
     </MainBackground>
   );
 };
+
+
 
 export default SecurityPinScreen;

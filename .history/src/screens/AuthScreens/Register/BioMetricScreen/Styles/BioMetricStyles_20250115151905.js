@@ -42,6 +42,6 @@ export const BioMetricStyles = theme =>
       fontSize: DimensionConstants.forty,
       fontWeight: '600',
       letterSpacing: DimensionConstants.twelve,
-      color: theme.primary,
+      color: '#005BBB',
     }
   });

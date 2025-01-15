@@ -48,7 +48,7 @@ const BioMetricScreen = ({route, navigation}) => {
         Alert.alert('Success', 'Biometric authentication successful!');
         setTimeout(() => {
           navigation.navigate('SecurityPinScreen');
-        }, 1500);
+        }, 1000);
       } else {
         Alert.alert(
           'Failed',
@@ -91,13 +91,10 @@ const BioMetricScreen = ({route, navigation}) => {
             <View style={styles.overlayContainer}>
               <SecurityTickIcon />
               <View style={styles.overlayTextContainer}>
-                <Text style={styles.resendText}>
-                  {t('Experience instant access')}
-                </Text>
+                <Text style={styles.resendText}>Experience instant access</Text>
                 <Text style={styles.infoText}>
-                  {t(
-                    'No passwords, no hassle, just secure and effortless verification',
-                  )}
+                  No passwords, no hassle, just secure and effortless
+                  verification
                 </Text>
               </View>
             </View>

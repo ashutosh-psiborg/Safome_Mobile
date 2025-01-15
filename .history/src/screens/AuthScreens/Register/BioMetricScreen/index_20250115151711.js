@@ -95,9 +95,8 @@ const BioMetricScreen = ({route, navigation}) => {
                   {t('Experience instant access')}
                 </Text>
                 <Text style={styles.infoText}>
-                  {t(
-                    'No passwords, no hassle, just secure and effortless verification',
-                  )}
+                                  { t('No passwords, no hassle, just secure and effortless
+                  verification') }
                 </Text>
               </View>
             </View>
